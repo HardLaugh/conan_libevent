@@ -59,7 +59,7 @@ class LibeventConan(conan_build_helper.CMakePackage):
 
     def requirements(self):
         if self.options.with_openssl:
-            self.requires.add("openssl/1_1_1-stable@conan/stable")
+            self.requires.add("openssl/1.1.1-stable@conan/stable")
 
     def source(self):
         tools.get(**self.conan_data["sources"][self.version])
